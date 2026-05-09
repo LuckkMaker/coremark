@@ -1,0 +1,16 @@
+layer:
+  # A layer is a collection of pre-configured source files or components
+  type: Coremark
+  description: Coremark layer
+
+  add-path:
+    - ./simple
+
+  groups:
+    - group: coremark
+      files:
+        - file: ./core_list_join.c
+        - file: ./core_main.c
+        - file: ./core_matrix.c
+        - file: ./core_state.c
+        - file: ./core_util.c

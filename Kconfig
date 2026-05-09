@@ -1,0 +1,26 @@
+# Copyright (c) 2026 LuckkMaker
+# All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+config COREMARK_ITERATIONS
+    int "Coremark Iterations"
+    default 1000
+    help
+        Set the number of iterations for the Coremark benchmark. Adjust this value to achieve a desired run time (e.g., 10 seconds).
+
+config COREMARK_CLOCKS_PER_SEC
+    int "Coremark Clocks Per Second"
+    default 1000
+    help
+        Set the number of clock ticks per second for the Coremark benchmark. This value is used to calculate the benchmark score based on the time taken for the specified iterations.
