@@ -5,6 +5,7 @@ layer:
 
   add-path:
     - ./simple
+    - ./
 
   groups:
     - group: coremark
