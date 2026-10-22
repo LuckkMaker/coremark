@@ -13,6 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+config COREMARK
+    bool "Coremark Benchmark"
+    default n
+    help
+        Enable Coremark benchmark for performance testing.
+
+if COREMARK
+
 config COREMARK_ITERATIONS
     int "Coremark Iterations"
     default 1000
@@ -24,3 +32,5 @@ config COREMARK_CLOCKS_PER_SEC
     default 1000
     help
         Set the number of clock ticks per second for the Coremark benchmark. This value is used to calculate the benchmark score based on the time taken for the specified iterations.
+
+endif # COREMARK
