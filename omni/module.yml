@@ -1,0 +1,7 @@
+name: coremark
+build:
+  cmake: .
+  kconfig: ../Kconfig
+enable: COREMARK
+settings:
+  layer: coremark.clayer.yml
